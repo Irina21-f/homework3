@@ -72,9 +72,9 @@ public class Main {
         float firstDiet = 0.25f;
         float secondDiet = 0.5f;
         float thirdDiet = (float)(firstDiet + secondDiet) / 2;
-        int daysForFirstDiet = (int) (weightNeeded / (float)firstDiet);
-        int daysForSecondDiet = (int) (weightNeeded / (float)secondDiet);
-        int daysForThirdDiet = (int) (weightNeeded / (float)thirdDiet);
+        int daysForFirstDiet = (int) (weightNeeded / (float) firstDiet);
+        int daysForSecondDiet = (int) (weightNeeded / (float) secondDiet);
+        int daysForThirdDiet = (int) (weightNeeded / (float) thirdDiet);
         System.out.println("Чтобы похудеть на 7 кг, спортсмен должен придерживаться " + daysForFirstDiet + " дней с потерей 0,250 кг, или " + daysForSecondDiet + " дней с потерей 0,500 кг, или " + daysForThirdDiet + " дней с потерей в " + thirdDiet + " кг в день");
         System.out.println("Задача 8");
         int salaryMashaNow = 67760;
