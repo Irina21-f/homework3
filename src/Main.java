@@ -29,7 +29,7 @@ public class Main {
         byte kidsAnna = 27;
         byte kidsKatya = 30;
         short allSheets = 480;
-        float sheetsPerPerson = (float) (allSheets / (kidsAnna + kidsKatya + kidsLuda));
+        int sheetsPerPerson = allSheets / (kidsAnna + kidsKatya + kidsLuda);
         System.out.println("На каждого ученика расчитано " + sheetsPerPerson + " листов бумаги.");
         System.out.println("Задача 4");
         byte workMachinePerTwoMinutes = 16;
@@ -44,9 +44,9 @@ public class Main {
         long oneMonthJob = fullDayJob * 30L;
         System.out.println("За месяц машина производит " + oneMonthJob + " штук бутылок");
         System.out.println("Задача 5");
-        byte white = 2;
-        byte brown = 4;
-        byte allColours = 120;
+        int white = 2;
+        int brown = 4;
+        int allColours = 120;
         int allClasses = allColours / (white + brown);
         int whiteColourPerClass = allClasses * white;
         int brownColourPerClass = allClasses * brown;
@@ -71,10 +71,10 @@ public class Main {
         byte weightNeeded = 7;
         float firstDiet = 0.25f;
         float secondDiet = 0.5f;
-        float thirdDiet = (float) (firstDiet + secondDiet) / 2;
-        int daysForFirstDiet = (int) (weightNeeded / (float) firstDiet);
-        int daysForSecondDiet = (int) (weightNeeded / (float) secondDiet);
-        int daysForThirdDiet = (int) (weightNeeded / (float) thirdDiet);
+        float thirdDiet = (float)(firstDiet + secondDiet) / 2;
+        int daysForFirstDiet = (int) (weightNeeded / (float)firstDiet);
+        int daysForSecondDiet = (int) (weightNeeded / (float)secondDiet);
+        int daysForThirdDiet = (int) (weightNeeded / (float)thirdDiet);
         System.out.println("Чтобы похудеть на 7 кг, спортсмен должен придерживаться " + daysForFirstDiet + " дней с потерей 0,250 кг, или " + daysForSecondDiet + " дней с потерей 0,500 кг, или " + daysForThirdDiet + " дней с потерей в " + thirdDiet + " кг в день");
         System.out.println("Задача 8");
         int salaryMashaNow = 67760;
@@ -93,9 +93,8 @@ public class Main {
         int diffSalDen = yearSalDenAft - yearSalDenNow;
         int yearSalKrisNow = salaryKrisNow * 12;
         int yearSalKrisAfter = salaryKrisAft * 12;
-        int diffSalKris = yearSalKrisAfter * yearSalKrisNow;
+        int diffSalKris = yearSalKrisAfter - yearSalKrisNow;
         System.out.println("Маша теперь получает - " + salaryMashaAft + " рублей. Годовой заработок вырос на " + diffSalMasha + " рублей. Денис теперь получает - " + salaryDenAft + " рублей. Годовой заработок вырос на " + diffSalDen + " рублей. Кристина теперь получает " + salaryKrisAft + " рублей. Годовой заработок увеличился на " + diffSalKris + " рублей");
-
 
 
     }
